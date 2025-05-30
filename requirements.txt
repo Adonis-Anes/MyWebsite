@@ -3,3 +3,4 @@ blinker
 click
 colorama
 Flask
+gunicorn
