@@ -107,7 +107,7 @@
             <span class="post-date">15 mayo 2025</span>
             <h2>Ética en la IA: Desafíos actuales y perspectivas futuras</h2>
             <p>La inteligencia artificial se ha convertido en parte fundamental de nuestra vida cotidiana, pero su rápida evolución plantea importantes cuestiones éticas. En este artículo analizo los principales desafíos a los que nos enfrentamos como sociedad y propongo un marco de desarrollo responsable...</p>
-            <a href="#" class="read-more">Leer más</a>
+            <a href="#" class="read-more" onclick="showExampleMsg(event)">Leer más</a>
           </div>
         </article>
         <!-- Post 2 -->
@@ -117,7 +117,7 @@
             <span class="post-date">3 mayo 2025</span>
             <h2>Interfaces cerebro-computadora: El próximo salto evolutivo</h2>
             <p>Las interfaces cerebro-computadora están revolucionando la forma en que interactuamos con la tecnología. Desde aplicaciones médicas hasta mejoras cognitivas, estas tecnologías prometen transformar radicalmente nuestra relación con las máquinas. En este artículo exploro los últimos avances y sus implicaciones...</p>
-            <a href="#" class="read-more">Leer más</a>
+            <a href="#" class="read-more" onclick="showExampleMsg(event)">Leer más</a>
           </div>
         </article>
         <!-- Post 3 -->
@@ -125,12 +125,19 @@
           <div class="post-image" style="background-image: url({{ url_for('static', filename='images/neuro-ai.jpeg') }});"></div>
           <div class="post-content">
             <span class="post-date">20 abril 2025</span>
-            <h2>Neurociencia y IA: Un viaje hacia la comprensión del cerebro</h2>
-            <p>La intersección entre la neurociencia y la inteligencia artificial está abriendo nuevas fronteras en nuestra comprensión del cerebro humano. En este artículo, analizo cómo los avances en IA están ayudando a desentrañar los misterios de la mente y cómo esto puede influir en el futuro de ambas disciplinas...</p>
-            <a href="#" class="read-more">Leer más</a>
+            <h2>Optimización simbólica: cuando la IA piensa como una científica</h2>
+            <p>¿Te imaginas una inteligencia artificial capaz de descubrir ecuaciones matemáticas ocultas en datos, diseñar fármacos más eficaces o incluso proponer nuevas arquitecturas de redes neuronales?  </p>
+            <a href="{{ url_for('static', filename='Post-divulgativo-Adonis.pdf') }}" class="read-more" download>Descargar en pdf</a>
           </div>
         </article>
       </div>
     </div>
   </div>
+  <script>
+    // filepath: c:\Users\adoni\Documents\mywebsite\app\templates\blog.html
+    function showExampleMsg(e) {
+      e.preventDefault();
+      alert("Posts de ejemplo, no puede ver más contenido");
+    }
+  </script>
 {% endblock %}
