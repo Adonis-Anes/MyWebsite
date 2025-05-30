@@ -38,6 +38,10 @@ def create_app(test_config=None):
     @app.route('/letter')
     def letter():
         return render_template('letter.html', letter=True)
+    
+    @app.route('/contact')
+    def contact():
+        return render_template('contact.html')
 
 
     return app
