@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{% block title %}Portfolio{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  {% block extra_styles %}
+  {% endblock %}
+</head>
+<body>
+  <div class="{% if home %}container home-container{% elif letter %}container letter-container{% else %}container about-container{% endif %}">
+    <nav>
+      <div class="logo">
+        <a href="{{ url_for('index') }}">ADONI<span>S.</span></a>
+      </div>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Inicio</a></li>
+        <li><a href="{{ url_for('about') }}">Acerca de mí</a></li>
+        <li><a href="{{ url_for('blog') }}">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    {% block content %}
+    {% endblock %}
+  </div>
+  <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

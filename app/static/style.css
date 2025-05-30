@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
+:root {
+  --color-bg: #121212;
+  --color-primary: #f9004d;
+  --color-text: #fff;
+  --color-btn-bg: #000;
+  --color-btn-text: #fff;
+  --color-btn-hover-bg: transparent;
+  --color-btn-hover-border: #fff;
+  --color-hire-bg: #fff;
+  --color-hire-text: #000;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+body{
+  color: var(--color-text);
+  background-color: var(--color-bg); /* Fondo oscuro para todo el body */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 35px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.home-container {
+  background-image: url(back.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.letter-container {
+  background-image: url(back2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.about-container {
+  background-color: var(--color-bg); /* Color de fondo oscuro para about.html */
+  min-height: 100vh; /* Asegura que el contenedor ocupa al menos toda la altura de la ventana */
+}
+nav{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo a{
+  font-family: 'syne', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: none;
+}
+span{
+  color: var(--color-primary);
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+nav ul li a{
+  text-decoration: none;
+  transition: 0.5s;
+}
+nav ul li a:hover{
+  color: var(--color-primary);
+}
+.login{
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 18px;
+}
+.btn{
+  background: var(--color-btn-bg);
+  border-radius: 6px;
+  padding: 9px 25px;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 18px;
+}
+.content{
+  margin-top: 10%;
+  max-width: 600px;
+}
+.content h2{
+  font-family: 'syne', sans-serif;
+  font-size: 60px
+}
+.content p{
+  margin-top: 10px;
+  line-height: 25px;
+}
+a{
+  color: var(--color-text);
+}
+.link {
+  margin-top: 30px;
+}
+.hire{
+  color: var(--color-hire-text);
+  text-decoration: none;
+  background: var(--color-hire-bg);
+  padding: 9px 25px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.link .hire:hover{
+  background: var(--color-btn-hover-bg);
+  border: 1px solid var(--color-btn-hover-border);
+  color: var(--color-btn-hover-border);
+}
+.h2, h3{
+    font-family: 'syne', sans-serif;
+    font-weight: bold;
+}

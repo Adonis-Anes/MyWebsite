@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+  <style>
+    section {
+      /* background-color: rgba(0, 0, 0, 0.089); */
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .motivation-section-title {
+      font-family: 'syne', sans-serif;
+      font-weight: bold;
+      font-size: 1.47em;
+      color: var(--color-primary);
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .motivation-section-text {
+      text-align: justify;
+      font-size: 1.08rem;
+      color: #e0e0e0;
+      margin-bottom: 0;      
+    }
+  </style>
+  <div class="container" style="max-width: 700px; margin: 60px auto 0 auto; padding: 32px 24px;">
+    <section style="margin-bottom: 32px;">
+      <h2 class="motivation-section-title">Quién soy</h2>
+      <p class="motivation-section-text">
+        Soy una profesional con formación en Psicología e Inteligencia Artificial, especializada en procesamiento del lenguaje natural (PLN) y desarrollo de APIs en Python. Los modelos de lenguaje han sido mi pasión desde mis primeros acercamientos académicos.
+      </p>
+    </section>
+    <section style="margin-bottom: 32px;">
+      <h2 class="motivation-section-title">Qué aporto</h2>
+      <p class="motivation-section-text">
+        Tengo experiencia desarrollando APIs REST, tanto desde cero como adaptando estructuras existentes. He trabajado en proyectos que combinan PLN con técnicas de IA, como identificación automática de términos y generación de texto con LLMs. También cuento con habilidades en despliegue de aplicaciones (Docker, Flask) y gestión de bases de datos.
+      </p>
+    </section>
+    <section style="margin-bottom: 32px;">
+      <h2 class="motivation-section-title">Qué me mueve</h2>
+      <p class="motivation-section-text">
+        El PLN me fascina por su potencial para entender y generar lenguaje. Desde mi TFG con Latent Semantic Analysis hasta proyectos prácticos como scraping y análisis de textos, siempre busco aplicar estos conocimientos de forma innovadora.
+      </p>
+    </section>
+    <section>
+      <h2 class="motivation-section-title">Qué busco o en qué puedo ayudar</h2>
+      <p class="motivation-section-text">
+        Quiero unirme a un equipo donde pueda aportar mi experiencia en desarrollo de APIs y soluciones de IA. Mi combinación de habilidades técnicas y comprensión del lenguaje humano me permite abordar desafíos con una perspectiva única.
+      </p>
+    </section>
+  </div>
+{% endblock %}
